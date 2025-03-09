@@ -12,7 +12,7 @@ $connection->query("CREATE DATABASE BlogDB");
 $connection->query("CREATE TABLE posts
  (id int not null auto_increment primary key,
 title varchar(50),
-content text(300),created_at timestamp()
+content text(300),created_at timestamp
 )");
 $connection->query("insert into posts (title,content)
 values('new post','hello everyone ')");
